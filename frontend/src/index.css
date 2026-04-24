@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-sidebar: #121212;
+  --color-card: #1a1a1a;
+  --color-accent-blue: #3b82f6;
+  --color-accent-yellow: #eab308;
+  --color-accent-red: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-gray-100 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.glass-card {
+  @apply bg-card border border-gray-800 rounded-xl shadow-lg;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-container {
+  background: #0a0a0a !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded-full hover:bg-gray-700;
+}
