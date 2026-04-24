@@ -1,0 +1,44 @@
+{
+    "top_features": [
+        [
+            "iot_temperature",
+            0.05267558532438915
+        ],
+        [
+            "warehouse_inventory_level",
+            0.049596273570835285
+        ],
+        [
+            "fuel_consumption_rate",
+            0.045000124103450695
+        ],
+        [
+            "order_fulfillment_status",
+            0.04398940048786949
+        ],
+        [
+            "loading_unloading_time",
+            0.0419008501672564
+        ],
+        [
+            "supplier_reliability_score",
+            0.04178714583190361
+        ],
+        [
+            "logistics_delay_factors",
+            0.04117195965800345
+        ],
+        [
+            "fatigue_monitoring_score",
+            0.041019439619214865
+        ],
+        [
+            "cargo_condition_status",
+            0.04088506500801633
+        ],
+        [
+            "environmental_risk",
+            0.03936097508151064
+        ]
+    ]
+}

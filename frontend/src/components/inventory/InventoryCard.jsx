@@ -9,7 +9,7 @@ const InventoryCard = ({ card, index }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.08 }}
-      className="glass-card p-6"
+      className="clean-card p-5"
     >
       <p className="text-gray-400 text-sm font-medium">{card.title}</p>
       <h3 className="text-2xl font-bold mt-1">{card.value}</h3>

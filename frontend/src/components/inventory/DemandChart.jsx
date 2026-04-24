@@ -7,7 +7,7 @@ const MotionDiv = motion.div;
 
 const DemandChart = ({ data = [] }) => {
   return (
-    <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="glass-card p-6">
+    <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="clean-card p-6">
       <h4 className="text-lg font-semibold mb-6 flex items-center gap-2">
         <LineChartIcon className="w-5 h-5 text-accent-blue" />
         Inventory Flow

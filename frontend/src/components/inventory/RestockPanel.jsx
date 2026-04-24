@@ -13,7 +13,7 @@ const MotionDiv = motion.div;
 const RestockPanel = ({ recommendations = [], warehouses = [] }) => {
   return (
     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <div className="lg:col-span-2 glass-card p-6 border border-gray-800/50">
+      <div className="lg:col-span-2 clean-card p-6">
         <div className="flex justify-between items-center mb-6">
           <h4 className="text-lg font-semibold flex items-center gap-2">
             <PackagePlus className="w-5 h-5 text-accent-blue" />
@@ -76,7 +76,7 @@ const RestockPanel = ({ recommendations = [], warehouses = [] }) => {
         </div>
       </div>
 
-      <div className="glass-card p-6 border border-gray-800/50">
+      <div className="clean-card p-6">
         <h4 className="text-lg font-semibold mb-6">Warehouse Snapshot</h4>
         <div className="max-h-[600px] overflow-y-auto pr-2 custom-scrollbar space-y-4">
           {warehouses.map((warehouse) => (
