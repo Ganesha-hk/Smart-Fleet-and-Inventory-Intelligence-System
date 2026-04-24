@@ -336,7 +336,7 @@ const FleetView = () => {
   return (
     <div className="h-[calc(100vh-128px)] flex gap-6 relative">
       {/* Map Content */}
-      <div className="flex-1 glass-card overflow-hidden relative z-10">
+      <div className="flex-1 clean-card overflow-hidden relative z-10">
         <div className="absolute top-4 left-4 z-[1000] bg-gray-950/80 border border-gray-800 rounded-lg px-3 py-2 text-xs text-gray-200 backdrop-blur-sm">
           <div className="font-semibold mb-2 tracking-wide text-gray-100">Risk</div>
           <div className="space-y-1.5">
@@ -426,7 +426,7 @@ const FleetView = () => {
             initial={{ x: 400, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 400, opacity: 0 }}
-            className="w-96 glass-card p-6 flex flex-col gap-6 z-20"
+            className="w-96 clean-card p-6 flex flex-col gap-6 z-20"
           >
             <div className="flex justify-between items-start">
               <div>

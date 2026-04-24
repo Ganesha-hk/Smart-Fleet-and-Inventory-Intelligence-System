@@ -32,16 +32,18 @@ const Inventory = () => {
   }, []);
 
   return (
-    <div className="space-y-8 pb-10">
-      <div className="flex justify-between items-end">
+    <div className="space-y-8 pb-10 max-w-[1600px] mx-auto px-4">
+      <div className="flex justify-between items-end mb-2">
         <div>
-          <h2 className="text-2xl font-bold">Inventory Intelligence</h2>
-          <p className="text-gray-500 mt-2">Inventory forecasts are linked to fleet delay signals so stock decisions stay synchronized with route risk.</p>
+          <h2 className="text-3xl font-bold tracking-tight">Inventory Intelligence</h2>
+          <p className="text-gray-400 mt-2 max-w-2xl">
+            Inventory forecasts synchronized with fleet delay signals and route risk analysis.
+          </p>
         </div>
       </div>
 
       {error && (
-        <div className="glass-card p-6 border border-red-500/30 text-red-300">
+        <div className="clean-card p-6 border-red-500/20 bg-red-500/5 text-red-400">
           Failed to load inventory intelligence: {error}
         </div>
       )}

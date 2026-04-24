@@ -1,0 +1,8 @@
+{
+  "dataset_rows": 25000,
+  "warehouse_count": 8,
+  "demand_mae": 9.721,
+  "demand_r2": 0.9962,
+  "stockout_accuracy": 0.9066,
+  "stockout_f1": 0.8642
+}

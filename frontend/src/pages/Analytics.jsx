@@ -39,7 +39,7 @@ const Analytics = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Survival Curve */}
-        <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="glass-card p-6">
+        <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="clean-card p-6">
           <div className="flex items-center gap-2 mb-6">
             <Zap className="w-5 h-5 text-accent-blue" />
             <h4 className="text-lg font-semibold">Survival Curve (Time-to-Delay)</h4>
@@ -63,7 +63,7 @@ const Analytics = () => {
         </MotionDiv>
 
         {/* Feature Importance */}
-        <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="glass-card p-6">
+        <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="clean-card p-6">
           <div className="flex items-center gap-2 mb-6">
             <Target className="w-5 h-5 text-accent-yellow" />
             <h4 className="text-lg font-semibold">Model Feature Importance</h4>
@@ -83,7 +83,7 @@ const Analytics = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Risk Segmentation */}
-        <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="glass-card p-6">
+        <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="clean-card p-6">
           <h4 className="text-lg font-semibold mb-6 flex items-center gap-2">
             <Shield className="w-5 h-5 text-green-500" />
             Risk Segmentation
@@ -112,7 +112,7 @@ const Analytics = () => {
 
         {/* Intelligence Cards */}
         <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="glass-card p-6 border-l-4 border-l-accent-blue">
+          <div className="clean-card p-6 border-l-4 border-l-accent-blue">
             <div className="flex items-center gap-3 mb-4">
               <Users className="w-6 h-6 text-accent-blue" />
               <h5 className="font-bold">Fleet Performance</h5>
@@ -123,7 +123,7 @@ const Analytics = () => {
               <span className="text-green-400 text-sm">Live</span>
             </div>
           </div>
-          <div className="glass-card p-6 border-l-4 border-l-accent-yellow">
+          <div className="clean-card p-6 border-l-4 border-l-accent-yellow">
             <div className="flex items-center gap-3 mb-4">
               <Zap className="w-6 h-6 text-accent-yellow" />
               <h5 className="font-bold">Risk Mitigation</h5>

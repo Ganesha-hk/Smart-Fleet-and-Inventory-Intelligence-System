@@ -6,7 +6,7 @@ const MotionDiv = motion.div;
 
 const StockAlert = ({ alerts = [] }) => {
   return (
-    <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="glass-card p-6 border border-gray-800/50">
+    <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="clean-card p-6">
       <div className="flex justify-between items-center mb-6">
         <h4 className="text-lg font-semibold flex items-center gap-2">
           <AlertTriangle className="w-5 h-5 text-accent-red" />

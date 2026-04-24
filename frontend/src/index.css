@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0a0a0a;
-  --color-sidebar: #121212;
-  --color-card: #1a1a1a;
+  --color-background: #050505;
+  --color-sidebar: #0a0a0a;
+  --color-card: #0f0f0f;
+  --color-card-hover: #141414;
   --color-accent-blue: #3b82f6;
-  --color-accent-yellow: #eab308;
+  --color-accent-yellow: #f59e0b;
   --color-accent-red: #ef4444;
+  --color-border: #1a1a1a;
+  --color-border-hover: #262626;
 }
 
 @layer base {
@@ -17,7 +20,15 @@
 }
 
 .glass-card {
-  @apply bg-card border border-gray-800 rounded-xl shadow-lg;
+  @apply bg-card/60 backdrop-blur-xl border border-white/5 rounded-2xl shadow-2xl;
+}
+
+.clean-card {
+  @apply bg-card border border-border rounded-xl transition-all duration-300;
+}
+
+.clean-card:hover {
+  @apply border-border-hover bg-card-hover;
 }
 
 .map-container {

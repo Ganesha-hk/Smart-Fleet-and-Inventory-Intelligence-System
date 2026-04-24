@@ -65,7 +65,7 @@ const Dashboard = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
-            className="glass-card p-6"
+            className="clean-card p-6"
           >
             <div className="flex items-start justify-between">
               <div>
@@ -85,7 +85,7 @@ const Dashboard = () => {
 
       {/* Charts Row */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 glass-card p-6">
+        <div className="lg:col-span-2 clean-card p-6">
           <h4 className="text-lg font-semibold mb-6 flex items-center gap-2">
             <LineChart className="w-5 h-5 text-accent-blue" />
             Delay Trend (24h)
@@ -106,7 +106,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="glass-card p-6">
+        <div className="clean-card p-6">
           <h4 className="text-lg font-semibold mb-6 flex items-center gap-2">
             <ShieldAlert className="w-5 h-5 text-accent-yellow" />
             Risk Distribution
@@ -128,7 +128,7 @@ const Dashboard = () => {
       </div>
 
       {/* Alert Feed */}
-      <div className="glass-card p-6">
+      <div className="clean-card p-6">
         <h4 className="text-lg font-semibold mb-6">Real-time Intelligence Feed</h4>
         <div className="space-y-4">
           {alerts.map((alert) => (
@@ -143,6 +143,12 @@ const Dashboard = () => {
                   <p className="text-xs text-gray-500 mt-1">Vehicle ID: <span className="text-gray-400 font-mono">{alert.vehicleId}</span> • {alert.time}</p>
                   {alert.reasons?.length > 0 && (
                     <p className="text-xs text-gray-400 mt-2">{alert.reasons.join(' • ')}</p>
+                  )}
+                  {alert.solution && (
+                    <div className="mt-3 p-3 bg-accent-blue/5 border border-accent-blue/10 rounded-lg">
+                      <p className="text-[10px] text-accent-blue font-black uppercase tracking-widest mb-1">Recommended Solution</p>
+                      <p className="text-xs text-gray-300 font-medium">{alert.solution}</p>
+                    </div>
                   )}
                 </div>
               </div>

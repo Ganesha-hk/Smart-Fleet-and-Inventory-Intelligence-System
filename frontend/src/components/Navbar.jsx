@@ -194,7 +194,7 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: 10, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                className="absolute right-0 top-14 w-80 glass-card overflow-hidden z-50 shadow-2xl"
+                className="absolute right-0 top-14 w-80 clean-card overflow-hidden z-50 shadow-2xl"
               >
                 <div className="p-4 border-b border-gray-800 flex justify-between items-center bg-gray-900/50">
                   <h3 className="font-bold">Notifications</h3>
